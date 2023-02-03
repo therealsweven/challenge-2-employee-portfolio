@@ -1,34 +1,45 @@
 body {
-  background-color: #f2cd5c;
+  /* background-color: #f2cd5c; */
+  background-image: url("https://images.unsplash.com/photo-1542876974-aa06c4f5c6c4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2242&q=80");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
   font-family: "Caveat", cursive;
 }
 header {
   display: flex;
   justify-content: space-between;
-  background-color: #a61f69;
-  color: #f2921d;
-  border: #400e32 solid 5px;
+  background-color: #000000;
+  color: #000000;
+  border: #000000 solid 5px;
   border-radius: 10pt;
+  /* background-image: url("https://images.unsplash.com/photo-1541661538396-53ba2d051eed?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=627&q=80"); */
+  text-shadow: rgb(0, 0, 0) 10px 0 20px;
+}
+.headback {
+  background-image: url("https://images.unsplash.com/photo-1541661538396-53ba2d051eed?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=627&q=80");
+  background-size: cover;
+  background-position: center;
 }
 
 header h1 {
   margin-left: 2%;
-  font-size: 40px;
+  font-size: 50px;
 }
-h2 {
-  font-size: 35px;
-}
+
 nav {
-  font-size: 30px;
-  max-width: 30%;
+  font-size: 45px;
   display: flex;
-  margin-right: 30px;
-  margin-top: 35px;
+  max-width: 70%;
+  margin-right: 50px;
+  margin-top: 40px;
 }
 .nav-op {
-  margin-left: 15px;
+  margin-left: 50px;
   text-decoration: none;
-  color: #f2921d;
+  font-weight: bolder;
+  color: black;
+  /* color: #f2921d; */
 }
 
 p {
@@ -37,8 +48,9 @@ p {
 .about {
   margin-top: 50px;
   text-align: center;
-  background-color: #400e32;
-  border: #a61f69 solid 3px;
+  background-color: #1b1b1b;
+  border: #ff3fa9 solid 3px;
+  border-radius: 5px;
   color: #f2921d;
   padding-left: 2%;
   padding-right: 2%;
@@ -47,8 +59,9 @@ p {
   margin-top: 50px;
   display: flex;
   text-align: center;
-  background-color: #a61f69;
-  border: #400e32 solid 3px;
+  background-color: #1b1b1b;
+  border: #04ff00 solid 3px;
+  border-radius: 5px;
   color: #f2921d;
   padding-left: 2%;
   padding-right: 2%;
@@ -57,7 +70,7 @@ p {
 .card {
   margin: 10px;
   text-align: center;
-  background-color: #400e32;
+  background-color: #1b1b1b;
   border: #a61f69 solid 3px;
   color: #f2921d;
   padding-left: 2%;
@@ -67,8 +80,9 @@ p {
 .contact {
   margin-top: 50px;
   text-align: center;
-  background-color: #400e32;
-  border: #a61f69 solid 3px;
+  background-color: #1b1b1b;
+  border: #00e5ff solid 3px;
+  border-radius: 5px;
   color: #f2921d;
   padding-left: 2%;
   padding-right: 2%;
