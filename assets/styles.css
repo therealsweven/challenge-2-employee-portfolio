@@ -1,0 +1,90 @@
+body {
+  background-color: #f2cd5c;
+  font-family: "Caveat", cursive;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  background-color: #a61f69;
+  color: #f2921d;
+  border: #400e32 solid 5px;
+  border-radius: 10pt;
+}
+
+header h1 {
+  margin-left: 2%;
+  font-size: 40px;
+}
+h2 {
+  font-size: 35px;
+}
+nav {
+  font-size: 30px;
+  max-width: 30%;
+  display: flex;
+  margin-right: 30px;
+  margin-top: 35px;
+}
+.nav-op {
+  margin-left: 15px;
+  text-decoration: none;
+  color: #f2921d;
+}
+
+p {
+  font-size: 18px;
+}
+.about {
+  margin-top: 50px;
+  text-align: center;
+  background-color: #400e32;
+  border: #a61f69 solid 3px;
+  color: #f2921d;
+  padding-left: 2%;
+  padding-right: 2%;
+}
+.content {
+  margin-top: 50px;
+  display: flex;
+  text-align: center;
+  background-color: #a61f69;
+  border: #400e32 solid 3px;
+  color: #f2921d;
+  padding-left: 2%;
+  padding-right: 2%;
+}
+
+.card {
+  margin: 10px;
+  text-align: center;
+  background-color: #400e32;
+  border: #a61f69 solid 3px;
+  color: #f2921d;
+  padding-left: 2%;
+  padding-right: 2%;
+}
+
+.contact {
+  margin-top: 50px;
+  text-align: center;
+  background-color: #400e32;
+  border: #a61f69 solid 3px;
+  color: #f2921d;
+  padding-left: 2%;
+  padding-right: 2%;
+}
+
+.contact a {
+  text-decoration: none;
+  color: #f2921d;
+}
+
+ul {
+  display: flex;
+}
+
+li {
+  list-style: none;
+  width: 100%;
+  justify-content: space-evenly;
+}
