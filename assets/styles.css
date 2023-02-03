@@ -42,19 +42,29 @@ nav {
   /* color: #f2921d; */
 }
 
-p {
-  font-size: 18px;
-}
 .about {
-  margin-top: 50px;
+  margin-top: 30px;
   text-align: center;
   background-color: #1b1b1b;
   border: #ff3fa9 solid 3px;
   border-radius: 5px;
-  color: #f2921d;
+  color: #ffffff;
   padding-left: 2%;
   padding-right: 2%;
 }
+h2 {
+  font-size: 30px;
+}
+#selfie {
+  max-width: 40%;
+  height: auto;
+  justify-content: center;
+  border-radius: 50%;
+}
+p {
+  font-size: 25px;
+}
+
 .content {
   margin-top: 50px;
   display: flex;
@@ -62,7 +72,7 @@ p {
   background-color: #1b1b1b;
   border: #04ff00 solid 3px;
   border-radius: 5px;
-  color: #f2921d;
+  color: #ffffff;
   padding-left: 2%;
   padding-right: 2%;
 }
@@ -81,7 +91,7 @@ p {
   margin-top: 50px;
   text-align: center;
   background-color: #1b1b1b;
-  border: #00e5ff solid 3px;
+  border: #00f7fb solid 3px;
   border-radius: 5px;
   color: #f2921d;
   padding-left: 2%;
