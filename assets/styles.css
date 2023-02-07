@@ -4,14 +4,15 @@
   --pink: #d61355;
   --orange: #f94a29;
   --yellow: #fce22a;
-  --blue: #30e3df;
+  --blue: #4dfffc;
   --blue2: #179593c7;
+  font-size: 16px;
 }
 
 body {
   /* background-color: #f2cd5c; */
   background-color: var(--pink);
-  background: linear-gradient(var(--pink), var(--blue));
+  background: linear-gradient(var(--pink), var(--blue2));
   /* background-image: url("./images/susan-wilkinson-9mGgj188pZQ-unsplash.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -24,18 +25,12 @@ header {
   display: flex;
   justify-content: space-between;
   color: var(--blue);
-  border: var(--blue) solid 3px;
+  border: var(--blue) ridge 5px;
   border-radius: 10pt;
   background: linear-gradient(var(--orange), var(--yellow));
   box-shadow: var(--blue);
   text-shadow: rgb(0, 0, 0) 10px 5px 20px;
-  opacity: 1;
 }
-/* .headback {
-  background-image: url("https://images.unsplash.com/photo-1541661538396-53ba2d051eed?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=627&q=80");
-  background-size: cover;
-  background-position: center;
-} */
 
 header h1 {
   margin-left: 2%;
@@ -82,8 +77,8 @@ main {
 .about {
   margin-top: 30px;
   text-align: center;
-  background: linear-gradient(var(--orange), var(--yellow));
-  border: var(--blue) solid 3px;
+  background: linear-gradient(var(--yellow), var(--orange));
+  border: var(--blue) ridge 5px;
   border-radius: 5px;
   color: var(--blue);
   padding-left: 2%;
@@ -91,7 +86,6 @@ main {
   display: flex;
   flex-direction: column;
   box-shadow: black 10px 10px 50px;
-  background: #1b1b1b;
 }
 .abt-card {
   display: flex;
@@ -102,25 +96,25 @@ main {
 #abt-card-pic {
   max-width: 30%;
   height: auto;
-  border: 3px solid var(--blue);
+  border: 3px dashed var(--blue);
   box-shadow: var(--dark) 10px 10px 50px;
   border-radius: 50%;
   margin-top: 0%;
-  margin-bottom: 2%;
+  margin-bottom: 4%;
 }
 #abt-card-bio {
   max-width: 33%;
-  max-height: 30%;
-  border: 3px solid var(--blue);
+  max-height: 40%;
+  /* border: 3px solid var(--blue);
   border-radius: 10px;
-  box-shadow: var(--dark) 10px 10px 50px;
+  box-shadow: var(--dark) 10px 10px 50px; */
   height: auto;
   padding: 15px;
   margin-top: 2%;
   margin-bottom: 2%;
   /* background-color: var(--light); */
   color: var(--blue);
-  text-shadow: var(--dark) 5px 5px 50px;
+  text-shadow: var(--dark) 0px 15px 20px;
 }
 
 h2 {
@@ -141,41 +135,111 @@ h2 {
 .content {
   margin-top: 50px;
   display: flex;
-  text-align: center;
-  /* background-color: #1b1b1b; */
-  border: var(--orange) ridge 5px;
+  flex-direction: column;
+  align-items: center;
+  background: linear-gradient(var(--orange), var(--yellow));
+  border: var(--blue) ridge 5px;
   border-radius: 5px;
-  color: var(--orange);
+  color: var(--blue);
   padding-left: 2%;
   padding-right: 2%;
   box-shadow: black 5px 5px 10px;
 }
 
-.card {
+/* .card {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
   margin: 10px;
   text-align: center;
-  background-color: #1b1b1b;
-  border: #a61f69 solid 3px;
-  color: #f2921d;
+  color: var(--blue);
   padding-left: 2%;
   padding-right: 2%;
+} */
+
+.card {
+  margin-top: 3%;
+  position: relative;
+  width: 80%;
+}
+/* https://www.w3schools.com/css/tryit.asp?filename=trycss_css_image_overlay_slideright */
+.image {
+  /* display: block; */
+  width: 100%;
+  height: auto;
+  border: dashed var(--blue) 0.33rem;
+  transition: 0.5s ease;
+  backface-visibility: hidden;
+  opacity: 0.8;
+}
+.overlay {
+  position: absolute;
+  bottom: 10%;
+  left: 0%;
+  right: 0%;
+  background-color: var(--blue);
+  overflow: hidden;
+  width: 30%;
+  height: 20%;
+  transition: 0.5s ease;
+}
+.card:hover .overlay {
+  width: 40%;
+  left: 0;
+  opacity: 1;
+}
+.card:hover .image {
+  border: solid var(--blue) 0.33rem;
+  opacity: 1;
 }
 
+.text {
+  white-space: nowrap;
+  color: var(--pink);
+  font-size: 1.5rem;
+  position: absolute;
+  overflow: hidden;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transition: 0.5s ease;
+}
+.text2 {
+  white-space: nowrap;
+  color: var(--orange);
+  font-size: 1rem;
+  position: absolute;
+  overflow: hidden;
+  top: 65%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transition: 0.5s ease;
+}
+.card:hover .text {
+  font-size: 2rem;
+  top: 35%;
+}
+.card:hover .text2 {
+  font-size: 1.5rem;
+  top: 70%;
+}
 .contact {
   margin-top: 50px;
   text-align: center;
-  background-color: #1b1b1b;
-  border: var(--pink) ridge 5px;
+  background: linear-gradient(var(--yellow), var(--orange));
+  border: var(--blue) ridge 5px;
   border-radius: 5px;
-  color: var(--pink);
+  color: var(--blue);
   padding-left: 2%;
   padding-right: 2%;
   box-shadow: black 5px 5px 10px;
 }
 
 .contact a {
-  text-decoration: none;
-  color: var(--pink);
+  text-decoration: underline;
+  color: var(--blue);
 }
 
 ul {
@@ -186,4 +250,30 @@ li {
   list-style: none;
   width: 100%;
   justify-content: space-evenly;
+}
+
+#card1 {
+  width: 1000px;
+  /* background-image: url("./images/Horiseon\ Refractor.png");
+  background-repeat: no-repeat;
+  background-size: 80% auto; */
+  border: var(--blue) solid 3px;
+}
+
+.gfg {
+  margin: 3%;
+  position: relative;
+}
+
+.first-txt {
+  background-color: var(--pink);
+  border: #4dfffc;
+  position: absolute;
+  left: 20px;
+}
+
+.second-txt {
+  position: absolute;
+  top: -50px;
+  left: 150px;
 }
