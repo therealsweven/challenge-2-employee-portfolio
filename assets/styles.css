@@ -1,3 +1,4 @@
+/* Defines variables for colors and sets an initial font-size to be used with rems  */
 :root {
   --light: white;
   --dark: black;
@@ -8,14 +9,14 @@
   --blue2: #179593c7;
   font-size: 16px;
 }
-
+/* Define background color using color variables, font-family, and body margins */
 body {
   background-color: var(--pink);
   background: linear-gradient(var(--pink), var(--blue2));
-
   font-family: "Oswald", sans-serif;
   margin: 2%;
 }
+/* Define stlying properties for header using different font, a flex-box containing the title and navbar */
 header {
   font-family: "Caveat", cursive;
   display: flex;
@@ -28,12 +29,12 @@ header {
   box-shadow: var(--blue);
   text-shadow: rgb(0, 0, 0) 10px 5px 20px;
 }
-
+/* Specifies responsive font size for the title */
 header h1 {
   margin-left: 2%;
   font-size: 5vw;
 }
-
+/* Creates another flexbox within the header to hold the navbar items with a different responsive font-size.  Styles the navbar */
 nav {
   font-size: 4vw;
   display: flex;
@@ -43,7 +44,7 @@ nav {
   margin-right: 25px;
   text-align: center;
 }
-
+/* Styling the individual properties within each navbar child item */
 .nav-op {
   text-align: center;
   align-self: center;
@@ -59,7 +60,7 @@ nav {
   padding-left: 10px;
   text-shadow: var(--dark);
 }
-
+/* Adds different styling to be used when a user hovers over any of the navbar options  */
 .nav-op:hover {
   color: white;
   font-size: larger;
@@ -73,7 +74,7 @@ nav {
   box-shadow: var(--blue);
   text-shadow: var(--blue2) 10px 10px 10px;
 }
-
+/* Styles the entire about section properties and creates a flex-box to be used to hold the picture and bio */
 .about {
   margin-top: 30px;
   text-align: center;
@@ -87,13 +88,14 @@ nav {
   flex-direction: column;
   box-shadow: black 10px 10px 50px;
 }
+/* Child class for about flexbox to hold the image and bio */
 .abt-card {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
   align-items: center;
 }
-
+/* Specific properties for the pic in the about section */
 #abt-card-pic {
   max-width: 30%;
   height: auto;
@@ -102,6 +104,7 @@ nav {
   border-radius: 50%;
   margin: 4%;
 }
+/* Specific properties for the bio paragraph within the about section */
 #abt-card-bio {
   text-align: center;
   max-width: 40%;
@@ -112,6 +115,7 @@ nav {
   color: var(--blue);
   text-shadow: var(--dark) 0px 15px 20px;
 }
+/* Styles all the section headings in about, content, and contact using variable colors and responsive font */
 h2 {
   font-family: "Caveat", cursive;
   font-size: 3.5vw;
@@ -120,11 +124,13 @@ h2 {
   text-shadow: var(--dark) 7px 7px 20px;
   text-underline-offset: 15px;
 }
+/* Styles the text in the bio paragraph */
 .about p {
   font-size: 2vw;
   text-justify: distribute;
   align-self: center;
 }
+/* Styles the content section as a whole  */
 .content {
   margin-top: 50px;
   display: flex;
@@ -134,10 +140,9 @@ h2 {
   border: var(--blue) ridge 5px;
   border-radius: 5px;
   color: var(--blue);
-  /* padding-left: 2%;
-  padding-right: 2%; */
   box-shadow: black 10px 10px 50px;
 }
+/* Defines a separate flexbox container to hold smaller content images, as the first one must be bigger than the rest following */
 .small-cards-container {
   display: flex;
   flex-direction: row;
@@ -146,6 +151,7 @@ h2 {
   align-items: center;
   width: 100%;
 }
+/* Styles the big content card on top */
 .card {
   margin-top: 3%;
   position: relative;
@@ -153,6 +159,7 @@ h2 {
   align-self: center;
   justify-content: center;
 }
+/* Styles the small content cards below*/
 .small-card {
   margin: 1%;
   position: relative;
@@ -163,6 +170,7 @@ h2 {
 }
 /* Image sliding overlay and transparency code partly from w3 schools */
 /* https://www.w3schools.com/css/tryit.asp?filename=trycss_css_image_overlay_slideright */
+/* Styles the big card's image on the top */
 .image {
   width: 100%;
   border: dashed var(--blue) 0.33rem;
@@ -171,6 +179,7 @@ h2 {
   backface-visibility: hidden;
   opacity: 0.8;
 }
+/* Styles the small cards' images below*/
 .image-small {
   width: 100%;
   height: auto;
@@ -181,6 +190,7 @@ h2 {
   opacity: 0.8;
   image-orientation: from-image;
 }
+/* Styles the overlay pre-hover that will label the big content card on top */
 .overlay {
   position: absolute;
   bottom: 10%;
@@ -192,6 +202,7 @@ h2 {
   height: 15%;
   transition: 0.5s ease;
 }
+/* Styles the overlays pre-hover that will label the small content cards below */
 .overlay-small {
   position: absolute;
   bottom: 10%;
@@ -203,30 +214,33 @@ h2 {
   height: 20%;
   transition: 0.5s ease;
 }
+/* Defines new properties for the big overlay on hover, making it bigger */
 .card:hover .overlay {
   width: 40%;
   left: 0;
   opacity: 1;
 }
+/* Defines new properties for the big content image on hover, making it non-transparent */
 .card:hover .image {
   border: solid var(--blue) 0.33rem;
   opacity: 1;
 }
+/* Defines new properties for the small overlays on hover, making them bigger */
 .small-card:hover .overlay-small {
   width: 42%;
   height: 22%;
   left: 0;
   opacity: 1;
 }
+/* Defines new properties for the small content images on hover, making it non-transparent */
 .small-card:hover .image-small {
   border: solid var(--blue) 0.33rem;
   opacity: 1;
 }
-
+/* Styles the main text within the big content card overlay with responsive font size. Defines transition properties for the hover.*/
 .text {
   white-space: nowrap;
   color: var(--pink);
-  /* font-size: 1.5rem; */
   font-size: 2vw;
   position: absolute;
   overflow: hidden;
@@ -236,6 +250,7 @@ h2 {
   -ms-transform: translate(-50%, -50%);
   transition: 0.5s ease;
 }
+/* Styles the sub-text within the big content card overlay with responsive font size and a different color.  Defines transition properties for the hover.*/
 .text2 {
   white-space: nowrap;
   color: var(--orange);
@@ -248,6 +263,7 @@ h2 {
   -ms-transform: translate(-50%, -50%);
   transition: 0.5s ease;
 }
+/* Styles the main text within the small content card overlays with responsive font size and a different color.  Defines transition properties for the hover.*/
 .small-text {
   white-space: nowrap;
   color: var(--pink);
@@ -260,6 +276,7 @@ h2 {
   -ms-transform: translate(-50%, -50%);
   transition: 0.5s ease;
 }
+/* Styles the sub-text within the small content card overlay with responsive font size and a different color.  Defines transition properties for the hover.*/
 .small-text2 {
   white-space: nowrap;
   color: var(--orange);
@@ -272,6 +289,7 @@ h2 {
   -ms-transform: translate(-50%, -50%);
   transition: 0.5s ease;
 }
+/* Styles property for the text in the card overlays on hover to grow a little larger when hovered over */
 .card:hover .text {
   font-size: 2.5vw;
   top: 35%;
@@ -288,11 +306,7 @@ h2 {
   font-size: 1.6vw;
   top: 70%;
 }
-
-.image .small {
-  width: 50%;
-  height: 20%;
-}
+/* Styling the contact section on bottom with a responsive font size and var colors */
 .contact {
   font-size: 2vw;
   margin-top: 50px;
@@ -306,22 +320,23 @@ h2 {
   padding-right: 2%;
   box-shadow: black 10px 10px 50px;
 }
-
+/* Removes underline from links in the contact section and defines text color for links */
 .contact a {
   text-decoration: underline;
   color: var(--blue);
 }
-
+/* Creates a user list that will serve as a flexbox for the contact links */
 ul {
   margin-top: 5%;
   display: flex;
 }
-
+/* Child element to the ul that is holding the links */
 li {
   list-style: none;
   width: 100%;
 }
 
+/* Make about section reformat under 100px screen width */
 @media screen and (max-width: 1000px) {
   .abt-card {
     flex-direction: column;
@@ -336,18 +351,22 @@ li {
   }
 }
 
+/* Creating responsiveness to make site accessible on mobile*/
 @media screen and (max-width: 768px) {
+  /* Change direcion of nav-bar */
   nav {
     flex-direction: column;
     width: 100%;
     margin-right: 0;
   }
+  /* Styles the navbar options differently for mobile */
   .nav-op {
     width: 100%;
     border-top: var(--blue) 3px solid;
     border-bottom: var(--blue) 3px solid;
     margin-bottom: 10px;
   }
+  /* Styles how hover properties for nav options wwill change when under 768px screen width */
   .nav-op:hover {
     border-radius: 0px;
     background-color: var(--blue2);
@@ -360,16 +379,19 @@ li {
     box-shadow: var(--blue);
     text-shadow: var(--blue2) 10px 10px 10px;
   }
+  /* Moves navbar below title instead of beside */
   header {
     flex-direction: column;
   }
-
+  /* changes bio paragraph max-width to be larger since it's under the picture at this screen size */
   #abt-card-bio {
     max-width: 80%;
   }
+  /* Switches flex-orientation for the small content cards from row to column so that there is just one column of cards */
   .small-cards-container {
     flex-direction: column;
   }
+  /* Resizes small card widths to fill the screen more since they are in a single column now */
   .small-card {
     width: 80%;
   }
