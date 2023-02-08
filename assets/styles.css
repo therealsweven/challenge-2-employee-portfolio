@@ -158,6 +158,7 @@ h2 {
   align-items: center;
   color: var(--blue);
   width: 46.5%;
+  height: max-content;
 }
 /* Image sliding overlay and transparency code partly from w3 schools */
 /* https://www.w3schools.com/css/tryit.asp?filename=trycss_css_image_overlay_slideright */
@@ -177,6 +178,7 @@ h2 {
   transition: 0.5s ease;
   backface-visibility: hidden;
   opacity: 0.8;
+  image-orientation: from-image;
 }
 .overlay {
   position: absolute;
