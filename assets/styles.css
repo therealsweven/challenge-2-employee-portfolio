@@ -4,7 +4,7 @@
   --pink: #d61355;
   --orange: #f94a29;
   --yellow: #fce22a;
-  --blue: #4dfffc;
+  --blue: #31e9e6;
   --blue2: #179593c7;
   font-size: 16px;
 }
@@ -35,7 +35,7 @@ header h1 {
 }
 
 nav {
-  font-size: 3vw;
+  font-size: 4vw;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
@@ -47,8 +47,8 @@ nav {
 .nav-op {
   text-align: center;
   align-self: center;
-  margin-left: 25px;
-  margin-right: 25px;
+  margin-left: 15px;
+  margin-right: 15px;
   text-decoration: none;
   font-weight: 600;
   color: var(--blue);
@@ -103,7 +103,8 @@ nav {
   margin: 4%;
 }
 #abt-card-bio {
-  max-width: 30%;
+  text-align: center;
+  max-width: 40%;
   height: fit-content;
   height: auto;
   padding: 15px;
@@ -120,7 +121,7 @@ h2 {
   text-underline-offset: 15px;
 }
 .about p {
-  font-size: 1.5vw;
+  font-size: 2vw;
   text-justify: distribute;
   align-self: center;
 }
@@ -293,9 +294,10 @@ h2 {
   height: 20%;
 }
 .contact {
-  font-size: 1.5vw;
+  font-size: 2vw;
   margin-top: 50px;
   text-align: center;
+  justify-content: center;
   background: linear-gradient(var(--yellow), var(--orange));
   border: var(--blue) ridge 5px;
   border-radius: 5px;
@@ -318,7 +320,6 @@ ul {
 li {
   list-style: none;
   width: 100%;
-  justify-content: space-evenly;
 }
 
 @media screen and (max-width: 1000px) {
