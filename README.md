@@ -6,7 +6,7 @@ Say an employer is requesting a portfolio of work samples from a potential emplo
 
 ![Screenshot](Screenshot.png)
 
-URL: https://therealsweven.github.io/challenge-2-employee-portfolio/
+URL: https://therealsweven.github.io/robert-simpson-portfolio/
 
 ## Installation
 
