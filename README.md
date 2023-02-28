@@ -4,6 +4,10 @@
 
 Say an employer is requesting a portfolio of work samples from a potential employee so that they can review the work experience of the candidate. This site is meant to be the beginning of what I will use to eventually send samples of my personal work to a potential employer. This site puts personal info about me as well as screenshots of samples that include links to the actual web apps I have built.
 
+![Screenshot](Screenshot.png)
+
+URL: https://therealsweven.github.io/challenge-2-employee-portfolio/
+
 ## Installation
 
 N/A

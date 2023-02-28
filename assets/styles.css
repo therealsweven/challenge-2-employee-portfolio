@@ -267,7 +267,7 @@ h2 {
 .small-text {
   white-space: nowrap;
   color: var(--pink);
-  font-size: 1.65vw;
+  font-size: 1.4vw;
   position: absolute;
   overflow: hidden;
   top: 35%;
@@ -280,7 +280,7 @@ h2 {
 .small-text2 {
   white-space: nowrap;
   color: var(--orange);
-  font-size: 1.2vw;
+  font-size: 1.1vw;
   position: absolute;
   overflow: hidden;
   top: 70%;
